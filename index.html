@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+
+      body{
+        font-family: 'Poppins';font-size: 22px !important;
+     
+    margin: 0px;
+    padding: 0px;
+      }
+      h1.titile {
+    font-size: 70px;
+    color: #000;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+p.sub-title {
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+    font-family: revert;
+}
+     .wraper-main {
+        padding: 20px;
+    background-color: #7bc9d3;
+    position: relative;
+    height: 600px;
+    min-height: 600px;
+}
+.primary-div {
+    padding: 10px 10px;
+}
+.row.offer-section {
+    padding: 30px 200px;
+}
+.btn-submit {
+    text-align: center!important;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+button.btn.btn-primary {
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 4px 20px;
+}
+.first-icon :after , .second-icon:after {
+ 
+    content: "";
+    border: 1px solid #000;
+    height: 55%;
+    /* width: 10px; */
+    position: absolute;
+    /* top: 0px; */
+    bottom: 0px;
+    right: 0px;
+}  
+span.offer {
+    font-size: 30px;
+}
+.tv-section {
+    background-color: #f3f3f3;
+    padding: 0px 50px;
+    position: relative;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    position: relative;
+    margin-top: -200px;
+    width: 100%;
+}
+.text-info-details {
+    padding: 50px 30px;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: #1f5f72;
+    /* text-align: center; */
+    margin-top: 25px;
+    color: #FFF;
+    margin-bottom: 25px;
+    /* border: 2px solid #FFF; */
+}
+.price-section {
+    background-color: #fcfcfc;
+    padding: 20px;
+}
+section#footer {
+    background-color: #057474;
+    color: #FFF;
+    position: absolute;
+    width: 100%;
+}
+.text-muted {
+    color: #ffffff!important;
+}
+.text-small li a {
+    text-decoration: none;
+    line-height: 35px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 300;
+}
+a.text-muted::after {
+    content: '-';
+    position: absolute;
+    /* top: 2px; */
+    left: 14px;
+    /* border: 11px solid red; */
+    transform: rotate(0deg);
+    margin-left: 0;
+    margin-top: 3px;
+    /* border: 5px solid transparent; */
+    border-bottom-color: #ffffff;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+ul.list-unstyled.mt-3.mb-4.points li {
+    border-bottom: 1px solid #f6f4f4;
+    padding: 5px;
+} 
+#overlay{
+    padding: 120px 0px;
+}   
+img.insta-img {
+    margin-top: 0px;
+    object-fit: cover;
+    width: 100%;
+}
+.add-banner {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+p.description {
+    
+    font-size: 15px;
+    margin: 20px auto;
+    color: #fff;
+    font-weight: 100;
+}
+.col-md-btn {
+    margin: auto;
+    text-align: center;
+}
+.col-md-img {
+    margin: auto;
+    text-align: center;
+}
+.img-over {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#111459+0,7db9e8+100&1+0,1+62,0+99,0.7+99 */
+background: -moz-linear-gradient(left,  rgba(17,20,89,1) 0%, rgba(84,122,178,1) 62%, rgba(124,183,231,0.7) 99%, rgba(125,185,232,0.7) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(17,20,89,1) 0%,rgba(84,122,178,1) 62%,rgba(124,183,231,0.7) 99%,rgba(125,185,232,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(17,20,89,1) 0%,rgba(84,122,178,1) 62%,rgba(124,183,231,0.7) 99%,rgba(125,185,232,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111459', endColorstr='#b37db9e8',GradientType=1 ); /* IE6-9 */
+
+    }
+    button.btn.btn-lg.btn-success {
+    background-color: #12155a;
+    border: 1px solid #12165a;
+    border-radius: 0px;
+}
+</style>
+</head>
+<body>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+          <a class="p-2 text-dark" href="#">Features</a>
+          <a class="p-2 text-dark" href="#">Enterprise</a>
+          <a class="p-2 text-dark" href="#">Support</a>
+          <a class="p-2 text-dark" href="#">Pricing</a>
+        </nav>
+        <a class="btn btn-outline-primary" href="#">Sign up</a>
+      </div>
+    
+  
+<div class="container">
+ <div class="wraper-main">
+    <div class="text-center primary-div">
+        <h1 class="titile">Samsung TV</h1>
+        <p class="sub-title">UPp to 37% Off</p> 
+      </div>
+
+
+  <div class="row offer-section" >
+    <div class="col-sm-4 text-center first-icon">
+      <h3><i class="fa fa-bus" style="font-size:35px;color:#000"></i></h3>
+       
+      <b>UP to <span class="offer"> 12.50% </span><br>
+        Cashback
+    </b>
+    </div>
+    <div class="col-sm-4 text-center second-icon">
+        <h3><i class="fa fa-bus" style="font-size:35px;color:#000"></i></h3>
+         
+        <b>No Cost <span class="offer"> EMI </span><br>
+            Up to 18 Months
+        </b>
+      </div>
+      <div class="col-sm-4 text-center third-icon">
+        <h3> <i class="fa fa-bus" style="font-size:35px;color:#000"></i></h3>
+         
+        <b><span class="offer"> Free </span> <br>
+            Products Insurance
+        </b>
+      </div>
+
+      
+  </div>
+  <div class="col text-center btn-submit">
+    <button class="btn btn-primary">BUY NOW</button>
+  </div>
+
+
+
+  </div>
+
+  <div class="tv-section text-center">
+
+    <img src="tv.png">
+
+ </div>
+
+ <div class="text-info-details">
+<p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, aut. Doloremque in quidem perspiciatis possimus rerum perferendis illo beatae voluptatum animi, nulla blanditiis. Dolor quisquam nostrum eos mollitia repellendus deleniti?
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cum, saepe ipsam animi exercitationem dolores ducimus ex, recusandae, ad ratione alias sunt itaque mollitia eveniet rerum illo adipisci accusantium natus.
+</p>
+</div>
+
+
+
+
+  <div class="price-section">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Pricing</h1>
+        <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+      </div>
+      <br>     <br>     <br>     <br>     <br>     <br>     <br>
+
+
+    <div class="row">
+        <div class="col-md-4">
+           <div class="card mb-4">
+              <img class="card-img-top" src="//placeimg.com/290/180/any" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <ul class="list-unstyled mt-3 mb-4 points">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+               
+                 <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-dark btn-sm">Go somewhere</a>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4">
+           <div class="card mb-4">
+              <img class="card-img-top" src="//placeimg.com/290/180/any" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <ul class="list-unstyled mt-3 mb-4 points">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                 <a href="http://www.jquery2dotnet.com/" class="btn btn-dark btn-sm">Go somewhere</a>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4">
+           <div class="card mb-4">
+              <img class="card-img-top" src="//placeimg.com/290/180/any" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <ul class="list-unstyled mt-3 mb-4 points">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                 <a href="http://www.jquery2dotnet.com/" class="btn btn-dark btn-sm">Go somewhere</a>
+              </div>
+           </div>
+        </div>
+     </div>
+</div>
+ 
+
+</div>
+
+
+
+<section id="overlay">
+    <div class="container"> 
+<div class="add-banner">
+        <div class="col-md-12 img-over">
+            <div class="row">
+            <div class="col-md-2 col-sm-2 col-md-img">
+                <img src="insta.png" class="insta-img">
+            </div>
+            <div class="col-md-8 col-md-sm">
+               <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta reiciendis a maxime adipisci nisi, quas obcaecati pariatur neque eveniet dolores est, amet, illo inventore. Nobis corporis ipsa quis minus itaque!</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-md-btn">
+                <button type="button" class="btn btn-lg btn-success">Success</button>
+            </div>
+       
+       </div>
+     </div>
+    </div>
+     </div>
+    </section>
+
+    
+<section id="footer">
+<div class="container">
+<footer class="pt-4 my-md-5 pt-md-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        
+        <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Cool stuff</a></li>
+          <li><a class="text-muted" href="#">Random feature</a></li>
+          <li><a class="text-muted" href="#">Team feature</a></li>
+          <li><a class="text-muted" href="#">Stuff for developers</a></li>
+          <li><a class="text-muted" href="#">Another one</a></li>
+          <li><a class="text-muted" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Resource</a></li>
+          <li><a class="text-muted" href="#">Resource name</a></li>
+          <li><a class="text-muted" href="#">Another resource</a></li>
+          <li><a class="text-muted" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Team</a></li>
+          <li><a class="text-muted" href="#">Locations</a></li>
+          <li><a class="text-muted" href="#">Privacy</a></li>
+          <li><a class="text-muted" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+</section>
+
+</body>
+</html>
